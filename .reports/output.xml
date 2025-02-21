@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.13.2 on win32)" generated="2025-02-21T11:17:00.859708" rpa="false" schemaversion="5">
+<suite id="s1" name="Register.Test" source="D:\00_REPOSITORY\[ANDAMENTO CURSO]\robot-framework-modelo\tests\register.test.robot">
+<test id="s1-t1" name="Registrar usuário com dados aleatórios" line="15">
+<kw name="Start application" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-02-21T11:17:02.050099" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "D:\\00_REPOSITORY\\[ANDAMENTO CURSO]\\robot-framework-modelo\\.reports\\browser\\traces\\temp\\6280a4ac-44d4-4e78-914f-1c38d85e8d35"}</msg>
+<msg time="2025-02-21T11:17:02.141854" level="INFO">Starting Browser process C:\Users\CortezAmanda\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using port 50797</msg>
+<msg time="2025-02-21T11:17:02.142155" level="INFO">Node startup parameters: ['node', 'C:\\Users\\CortezAmanda\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\Browser\\wrapper\\index.js', '50797']</msg>
+<msg time="2025-02-21T11:17:04.792782" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"D:\\00_REPOSITORY\\[ANDAMENTO CURSO]\\robot-framework-modelo\\.reports\\browser\\traces\\temp\\6280a4ac-44d4-4e78-914f-1c38d85e8d35"}</msg>
+<arg>chromium</arg>
+<arg>false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-02-21T11:17:02.049011" elapsed="2.744154"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-02-21T11:17:08.615738" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev</msg>
+<msg time="2025-02-21T11:17:08.615902" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-02-21T11:17:04.793707" elapsed="3.822583"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:17:02.047750" elapsed="6.568902"/>
+</kw>
+<kw name="Clicar no botão de login" owner="register.actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-02-21T11:17:08.625218" level="INFO">Clicks the element '[data-testid="cadastrar"]'.</msg>
+<arg>${btn_create}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:08.622727" elapsed="0.572060"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:17:08.619260" elapsed="0.575860"/>
+</kw>
+<kw name="Preencher formulário com dados aleatórios" owner="register.actions">
+<kw name="Generate Random User" owner="Users">
+<msg time="2025-02-21T11:17:09.220335" level="INFO">${usuario} = {'nome': 'Teodora Lorenzon', 'email': 'associations1940@gmail.com', 'password': ',Z+=7.k9l='}</msg>
+<var>${usuario}</var>
+<status status="PASS" start="2025-02-21T11:17:09.200025" elapsed="0.020392"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-21T11:17:09.221836" level="INFO">{'nome': 'Teodora Lorenzon', 'email': 'associations1940@gmail.com', 'password': ',Z+=7.k9l='}</msg>
+<arg>${usuario}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-21T11:17:09.220715" elapsed="0.001217"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-02-21T11:17:09.224214" level="INFO">Fills the text 'Teodora Lorenzon' in the given field.</msg>
+<arg>${inp_nome}</arg>
+<arg>${usuario['nome']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:09.222155" elapsed="0.042168"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-02-21T11:17:09.268083" level="INFO">Fills the text 'associations1940@gmail.com' in the given field.</msg>
+<arg>${inp_email}</arg>
+<arg>${usuario['email']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:09.265114" elapsed="0.042105"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-02-21T11:17:09.311012" level="INFO">Fills the text ',Z+=7.k9l=' in the given field.</msg>
+<arg>${inp_password}</arg>
+<arg>${usuario['password']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:09.307675" elapsed="0.031192"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:17:09.196034" elapsed="0.143142"/>
+</kw>
+<kw name="Submeter o formulário" owner="register.actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-02-21T11:17:09.344530" level="INFO">Clicks the element '[data-testid="cadastrar"]'.</msg>
+<arg>${btn_submit_account}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:09.342172" elapsed="0.082546"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:17:09.340531" elapsed="0.084498"/>
+</kw>
+<kw name="Deslogar do site do registro" owner="register.actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-02-21T11:17:09.428925" level="INFO">Clicks the element '[data-testid="logout"]'.</msg>
+<arg>${btn_logout}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:09.427557" elapsed="4.637930"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-21T11:17:14.121009" level="INFO">Text: 'Login'</msg>
+<arg>${txt_login}</arg>
+<arg>contains</arg>
+<arg>Login</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:14.067160" elapsed="0.054053"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:17:09.425956" elapsed="4.695451"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2025-02-21T11:17:14.372625" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-02-21T11:17:14.122145" elapsed="0.250705"/>
+</kw>
+<msg time="2025-02-21T11:17:14.385277" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-02-21T11:17:14.419016" level="INFO">Switching context to context=404740ff-9647-42ee-b47d-f4986293fbd4 in CURRENT</msg>
+<msg time="2025-02-21T11:17:14.434083" level="INFO">Successfully changed active context: context=404740ff-9647-42ee-b47d-f4986293fbd4</msg>
+<msg time="2025-02-21T11:17:14.632412" level="INFO">Successfully closed Context</msg>
+<doc>Geral &gt; Este teste preenche o formulário de registro com dados gerados aleatoriamente</doc>
+<status status="PASS" start="2025-02-21T11:17:02.046366" elapsed="12.326815"/>
+</test>
+<test id="s1-t2" name="Registrar usuário com dados aleatórios administrador" line="23">
+<kw name="Start application" owner="base" type="SETUP">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-02-21T11:17:14.681129" level="INFO">Switching browser to browser=6ec4aff4-e4c1-4e67-a7b0-2338d29bf775</msg>
+<msg time="2025-02-21T11:17:14.692103" level="INFO">Successfully changed active browser: browser=6ec4aff4-e4c1-4e67-a7b0-2338d29bf775</msg>
+<msg time="2025-02-21T11:17:14.692774" level="INFO">Reusing existing browser with id: browser=6ec4aff4-e4c1-4e67-a7b0-2338d29bf775</msg>
+<arg>chromium</arg>
+<arg>false</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-02-21T11:17:14.678960" elapsed="0.014023"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-02-21T11:17:19.254253" level="INFO">Successfully initialized new page object and opened url: https://front.serverest.dev</msg>
+<msg time="2025-02-21T11:17:19.254645" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-02-21T11:17:14.694107" elapsed="4.561399"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:17:14.677587" elapsed="4.578585"/>
+</kw>
+<kw name="Clicar no botão de login" owner="register.actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-02-21T11:17:19.269048" level="INFO">Clicks the element '[data-testid="cadastrar"]'.</msg>
+<arg>${btn_create}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:19.265761" elapsed="0.426481"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:17:19.263029" elapsed="0.429443"/>
+</kw>
+<kw name="Preencher formulário com dados aleatórios" owner="register.actions">
+<kw name="Generate Random User" owner="Users">
+<msg time="2025-02-21T11:17:19.713219" level="INFO">${usuario} = {'nome': 'Andreo de Candia', 'email': 'holiday1856@gmail.com', 'password': '/iMlv.lrU:'}</msg>
+<var>${usuario}</var>
+<status status="PASS" start="2025-02-21T11:17:19.695197" elapsed="0.018161"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-21T11:17:19.714504" level="INFO">{'nome': 'Andreo de Candia', 'email': 'holiday1856@gmail.com', 'password': '/iMlv.lrU:'}</msg>
+<arg>${usuario}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-21T11:17:19.713862" elapsed="0.000732"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-02-21T11:17:19.716076" level="INFO">Fills the text 'Andreo de Candia' in the given field.</msg>
+<arg>${inp_nome}</arg>
+<arg>${usuario['nome']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:19.714818" elapsed="0.038665"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-02-21T11:17:19.760207" level="INFO">Fills the text 'holiday1856@gmail.com' in the given field.</msg>
+<arg>${inp_email}</arg>
+<arg>${usuario['email']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:19.754264" elapsed="0.043119"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-02-21T11:17:19.800604" level="INFO">Fills the text '/iMlv.lrU:' in the given field.</msg>
+<arg>${inp_password}</arg>
+<arg>${usuario['password']}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:19.797975" elapsed="0.030990"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:17:19.693627" elapsed="0.135650"/>
+</kw>
+<kw name="Marcar a opção de administrador" owner="register.actions">
+<kw name="Check Checkbox" owner="Browser">
+<arg>${chck_admin}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:19.833978" elapsed="0.079712"/>
+</kw>
+<kw name="Get Checkbox State" owner="Browser">
+<msg time="2025-02-21T11:17:19.947053" level="INFO">Retrieved dom property for element [data-testid="checkbox"] containing true</msg>
+<msg time="2025-02-21T11:17:19.947156" level="INFO">Checkbox is checked</msg>
+<arg>${chck_admin}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the state of the checkbox found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:19.914132" elapsed="0.033154"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:17:19.832831" elapsed="0.114653"/>
+</kw>
+<kw name="Submeter o formulário" owner="register.actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-02-21T11:17:19.949596" level="INFO">Clicks the element '[data-testid="cadastrar"]'.</msg>
+<arg>${btn_submit_account}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:19.948762" elapsed="0.063955"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:17:19.948004" elapsed="0.064905"/>
+</kw>
+<kw name="Deslogar do site do registro" owner="register.actions">
+<kw name="Click" owner="Browser">
+<msg time="2025-02-21T11:17:20.014793" level="INFO">Clicks the element '[data-testid="logout"]'.</msg>
+<arg>${btn_logout}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:20.014040" elapsed="4.704797"/>
+</kw>
+<kw name="Get Text" owner="Browser">
+<msg time="2025-02-21T11:17:24.758768" level="INFO">Text: 'Login'</msg>
+<arg>${txt_login}</arg>
+<arg>contains</arg>
+<arg>Login</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-21T11:17:24.719544" elapsed="0.039398"/>
+</kw>
+<status status="PASS" start="2025-02-21T11:17:20.013382" elapsed="4.745725"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser" type="TEARDOWN">
+<msg time="2025-02-21T11:17:25.016169" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-02-21T11:17:24.759825" elapsed="0.256626"/>
+</kw>
+<msg time="2025-02-21T11:17:25.020578" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-02-21T11:17:25.063030" level="INFO">Switching context to context=d8d80b2f-b0d0-4330-bf4f-cf6d4b88526a in CURRENT</msg>
+<msg time="2025-02-21T11:17:25.075029" level="INFO">Successfully changed active context: context=d8d80b2f-b0d0-4330-bf4f-cf6d4b88526a</msg>
+<msg time="2025-02-21T11:17:25.197395" level="INFO">Successfully closed Context</msg>
+<doc>Admin &gt; Este teste preenche o formulário de registro com dados gerados aleatoriamente</doc>
+<status status="PASS" start="2025-02-21T11:17:14.667964" elapsed="10.348863"/>
+</test>
+<doc>Cenário de Registro na Aplicação do geral e administrador</doc>
+<status status="PASS" start="2025-02-21T11:17:00.863687" elapsed="24.361502"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Register.Test" id="s1" pass="2" fail="0" skip="0">Register.Test</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-21T11:17:02.040754" level="ERROR">Error in file 'D:\00_REPOSITORY\[ANDAMENTO CURSO]\robot-framework-modelo\tests\register.test.robot' on line 9: Invalid resource file extension '.py'. Supported extensions are '.json', '.resource', '.rest', '.robot', '.rsrc', '.rst', '.tsv' and '.txt'.</msg>
+</errors>
+</robot>

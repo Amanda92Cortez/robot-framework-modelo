@@ -1,0 +1,112 @@
+{"level":30,"time":"2025-02-21T14:17:04.036Z","pid":16512,"hostname":"AmandaCortez","msg":"Listening on 50797"}
+(node:16512) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-02-21T14:17:04.314Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-02-21T14:17:04.787Z","pid":16512,"hostname":"AmandaCortez","msg":"Adding browser to stack: chromium, version: 133.0.6943.16"}
+{"level":30,"time":"2025-02-21T14:17:04.789Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method newBrowser"}
+{"level":30,"time":"2025-02-21T14:17:04.788Z","pid":16512,"hostname":"AmandaCortez","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2025-02-21T14:17:04.800Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-02-21T14:17:04.801Z","pid":16512,"hostname":"AmandaCortez","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-02-21T14:17:04.838Z","pid":16512,"hostname":"AmandaCortez","msg":"Changed active context"}
+{"level":30,"time":"2025-02-21T14:17:05.825Z","pid":16512,"hostname":"AmandaCortez","msg":"Video path: undefined"}
+{"level":30,"time":"2025-02-21T14:17:05.827Z","pid":16512,"hostname":"AmandaCortez","msg":"Changed active page"}
+{"level":30,"time":"2025-02-21T14:17:08.606Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method newPage"}
+{"level":30,"time":"2025-02-21T14:17:08.630Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method click"}
+{"level":30,"time":"2025-02-21T14:17:08.631Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"cadastrar\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:09.190Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method click"}
+{"level":30,"time":"2025-02-21T14:17:09.228Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-02-21T14:17:09.228Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"nome\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:09.260Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method fillText"}
+{"level":30,"time":"2025-02-21T14:17:09.271Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-02-21T14:17:09.271Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"email\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:09.303Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method fillText"}
+{"level":30,"time":"2025-02-21T14:17:09.313Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-02-21T14:17:09.313Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"password\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:09.335Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method fillText"}
+{"level":30,"time":"2025-02-21T14:17:09.347Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method click"}
+{"level":30,"time":"2025-02-21T14:17:09.347Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"cadastrar\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:09.421Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method click"}
+{"level":30,"time":"2025-02-21T14:17:09.432Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method click"}
+{"level":30,"time":"2025-02-21T14:17:09.432Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"logout\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:14.057Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method click"}
+{"level":30,"time":"2025-02-21T14:17:14.077Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getText"}
+{"level":30,"time":"2025-02-21T14:17:14.078Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with //h1[@class='font-robot'][contains(.,'Login')] in page."}
+{"level":30,"time":"2025-02-21T14:17:14.118Z","pid":16512,"hostname":"AmandaCortez","msg":"Retrieved text for element //h1[@class='font-robot'][contains(.,'Login')] containing Login"}
+{"level":30,"time":"2025-02-21T14:17:14.118Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getText"}
+{"level":30,"time":"2025-02-21T14:17:14.125Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-02-21T14:17:14.125Z","pid":16512,"hostname":"AmandaCortez","Take screenshot with options: ":{"path":"D:\\00_REPOSITORY\\[ANDAMENTO CURSO]\\robot-framework-modelo\\.reports\\browser\\screenshot\\robotframework-browser-screenshot-1.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-02-21T14:17:14.369Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-02-21T14:17:14.386Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:14.392Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:14.398Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:14.403Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:14.409Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:14.414Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:14.421Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:14.425Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:14.428Z","pid":16512,"hostname":"AmandaCortez","msg":"Changed active context"}
+{"level":30,"time":"2025-02-21T14:17:14.429Z","pid":16512,"hostname":"AmandaCortez","msg":"Changing current active page: page=da32b7f8-153e-4ae5-81a6-9a39e5ef8717"}
+{"level":30,"time":"2025-02-21T14:17:14.429Z","pid":16512,"hostname":"AmandaCortez","msg":"Changed active page"}
+{"level":30,"time":"2025-02-21T14:17:14.434Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-02-21T14:17:14.462Z","pid":16512,"hostname":"AmandaCortez","msg":"Removed page=67bd04a3-b969-410f-8923-4ffadb68044a from context=404740ff-9647-42ee-b47d-f4986293fbd4 page stack"}
+{"level":30,"time":"2025-02-21T14:17:14.630Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-02-21T14:17:14.673Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:14.674Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:14.688Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method switchBrowser"}
+{"level":30,"time":"2025-02-21T14:17:14.689Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method switchBrowser"}
+{"level":30,"time":"2025-02-21T14:17:14.701Z","pid":16512,"hostname":"AmandaCortez","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2025-02-21T14:17:14.701Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method newPage"}
+{"level":30,"time":"2025-02-21T14:17:14.741Z","pid":16512,"hostname":"AmandaCortez","msg":"Changed active context"}
+{"level":30,"time":"2025-02-21T14:17:15.663Z","pid":16512,"hostname":"AmandaCortez","msg":"Video path: undefined"}
+{"level":30,"time":"2025-02-21T14:17:15.664Z","pid":16512,"hostname":"AmandaCortez","msg":"Changed active page"}
+{"level":30,"time":"2025-02-21T14:17:19.247Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method newPage"}
+{"level":30,"time":"2025-02-21T14:17:19.274Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method click"}
+{"level":30,"time":"2025-02-21T14:17:19.274Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"cadastrar\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:19.687Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method click"}
+{"level":30,"time":"2025-02-21T14:17:19.717Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-02-21T14:17:19.717Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"nome\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:19.747Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method fillText"}
+{"level":30,"time":"2025-02-21T14:17:19.764Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-02-21T14:17:19.764Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"email\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:19.794Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method fillText"}
+{"level":30,"time":"2025-02-21T14:17:19.801Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method fillText"}
+{"level":30,"time":"2025-02-21T14:17:19.801Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"password\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:19.825Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method fillText"}
+{"level":30,"time":"2025-02-21T14:17:19.837Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method checkCheckbox"}
+{"level":30,"time":"2025-02-21T14:17:19.838Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"checkbox\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:19.910Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method checkCheckbox"}
+{"level":30,"time":"2025-02-21T14:17:19.916Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getBoolProperty"}
+{"level":30,"time":"2025-02-21T14:17:19.916Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"checkbox\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:19.944Z","pid":16512,"hostname":"AmandaCortez","msg":"Retrieved dom property for element [data-testid=\"checkbox\"] containing true"}
+{"level":30,"time":"2025-02-21T14:17:19.945Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getBoolProperty"}
+{"level":30,"time":"2025-02-21T14:17:19.950Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method click"}
+{"level":30,"time":"2025-02-21T14:17:19.950Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"cadastrar\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:20.009Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method click"}
+{"level":30,"time":"2025-02-21T14:17:20.015Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method click"}
+{"level":30,"time":"2025-02-21T14:17:20.015Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with [data-testid=\"logout\"] in page."}
+{"level":30,"time":"2025-02-21T14:17:24.712Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method click"}
+{"level":30,"time":"2025-02-21T14:17:24.723Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getText"}
+{"level":30,"time":"2025-02-21T14:17:24.723Z","pid":16512,"hostname":"AmandaCortez","msg":"Strict mode is enabled, find Locator with //h1[@class='font-robot'][contains(.,'Login')] in page."}
+{"level":30,"time":"2025-02-21T14:17:24.756Z","pid":16512,"hostname":"AmandaCortez","msg":"Retrieved text for element //h1[@class='font-robot'][contains(.,'Login')] containing Login"}
+{"level":30,"time":"2025-02-21T14:17:24.756Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getText"}
+{"level":30,"time":"2025-02-21T14:17:24.762Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method takeScreenshot"}
+{"level":30,"time":"2025-02-21T14:17:24.762Z","pid":16512,"hostname":"AmandaCortez","Take screenshot with options: ":{"path":"D:\\00_REPOSITORY\\[ANDAMENTO CURSO]\\robot-framework-modelo\\.reports\\browser\\screenshot\\robotframework-browser-screenshot-2.png","fileType":"png","fullPage":false,"timeout":10000,"omitBackground":false}}
+{"level":30,"time":"2025-02-21T14:17:25.013Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method takeScreenshot"}
+{"level":30,"time":"2025-02-21T14:17:25.021Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:25.026Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:25.037Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:25.045Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:25.051Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:25.058Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:25.063Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:25.066Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:25.069Z","pid":16512,"hostname":"AmandaCortez","msg":"Changed active context"}
+{"level":30,"time":"2025-02-21T14:17:25.069Z","pid":16512,"hostname":"AmandaCortez","msg":"Changing current active page: page=6310ee72-617b-4d74-8f88-5c1a81746c1c"}
+{"level":30,"time":"2025-02-21T14:17:25.069Z","pid":16512,"hostname":"AmandaCortez","msg":"Changed active page"}
+{"level":30,"time":"2025-02-21T14:17:25.075Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method closeContext"}
+{"level":30,"time":"2025-02-21T14:17:25.094Z","pid":16512,"hostname":"AmandaCortez","msg":"Removed page=c9607833-294d-4aaf-b465-279aa4d91c5d from context=d8d80b2f-b0d0-4330-bf4f-cf6d4b88526a page stack"}
+{"level":30,"time":"2025-02-21T14:17:25.195Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method closeContext"}
+{"level":30,"time":"2025-02-21T14:17:25.243Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:25.244Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-02-21T14:17:25.422Z","pid":16512,"hostname":"AmandaCortez","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-02-21T14:17:25.764Z","pid":16512,"hostname":"AmandaCortez","msg":"End of node method closeAllBrowsers"}

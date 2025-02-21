@@ -3,3 +3,4 @@ robotframework-browser
 robotframework-faker
 robotframework-requests
 Faker
+mimesis
