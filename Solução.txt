@@ -1,0 +1,125 @@
+
+O que resolver abaixo
+Error in "import robot".
+It seems that Robot Framework is not installed in C:\Users\amanda.cortez\AppData\Local\pypoetry\Cache\virtualenvs\poetry-ZGDNsy-l-py3.12\Scripts\python.exe.
+Please install it in your environment and restart the Robot Framework Language Server
+or set: "robot.language-server.python" or "robot.python.executable"
+to point to a python installation that has Robot Framework installed.
+Hint: with pip it can be installed with:
+C:\Users\amanda.cortez\AppData\Local\pypoetry\Cache\virtualenvs\poetry-ZGDNsy-l-py3.12\Scripts\python.exe -m pip install robotframework
+O ChatGPT disse:
+Esse erro indica que o Robot Framework não está instalado no ambiente virtual gerenciado pelo Poetry. Para resolver, siga os passos abaixo:
+
+1️⃣ Verificar o ambiente virtual ativo
+Execute no terminal:
+
+sh
+Copiar
+Editar
+poetry env info
+Isso confirmará qual ambiente virtual o Poetry está usando.
+
+Se o ambiente listado for diferente do caminho mostrado no erro, ative o correto com:
+
+sh
+Copiar
+Editar
+poetry shell
+2️⃣ Instalar o Robot Framework
+Dentro do ambiente virtual do Poetry, rode:
+
+sh
+Copiar
+Editar
+poetry add robotframework
+Ou, se quiser instalar globalmente no ambiente virtual:
+
+sh
+Copiar
+Editar
+poetry run pip install robotframework
+3️⃣ Verificar a instalação
+Confirme se o Robot Framework foi instalado corretamente:
+
+sh
+Copiar
+Editar
+poetry run robot --version
+4️⃣ Configurar o caminho no VS Code (se necessário)
+Se o problema persistir no VS Code, defina a configuração do Robot Framework Language Server para apontar o Python correto. No settings.json do VS Code, adicione:
+
+json
+Copiar
+Editar
+"robot.python.executable": "C:/Users/amanda.cortez/AppData/Local/pypoetry/Cache/virtualenvs/poetry-ZGDNsy-l-py3.12/Scripts/python.exe"
+ou
+
+json
+Copiar
+Editar
+"robot.language-server.python": "C:/Users/amanda.cortez/AppData/Local/pypoetry/Cache/virtualenvs/poetry-ZGDNsy-l-py3.12/Scripts/python.exe"
+Depois dessas etapas, reinicie o VS Code e tente rodar o código novamente. Se ainda tiver problemas, me avise! 🚀
+
+
+
+
+
+
+
+Você disse:
+Todos os comando dando esse erro
+Poetry could not find a pyproject.toml file in C:\Windows\System32 or its parents
+O ChatGPT disse:
+Esse erro acontece porque o Poetry não encontrou o arquivo pyproject.toml, que é necessário para identificar o projeto Python. Isso pode significar que:
+
+Você está rodando os comandos no diretório errado (por exemplo, C:\Windows\System32 em vez da pasta do seu projeto).
+O projeto não foi inicializado corretamente com o Poetry.
+✅ Passos para resolver:
+🔹 1. Verifique o diretório correto do projeto
+Antes de rodar qualquer comando do Poetry, vá até a pasta onde o seu projeto está salvo. Use:
+
+sh
+Copiar
+Editar
+cd CAMINHO/DO/SEU/PROJETO
+Exemplo, se o seu projeto está em C:\Users\amanda.cortez\meu_projeto, digite:
+
+sh
+Copiar
+Editar
+cd C:\Users\amanda.cortez\meu_projeto
+Agora tente rodar novamente:
+
+sh
+Copiar
+Editar
+poetry env info
+🔹 2. Se não houver um pyproject.toml, inicialize o projeto
+Se o arquivo pyproject.toml não existir, você pode criar um novo rodando:
+
+sh
+Copiar
+Editar
+poetry init
+Isso iniciará um assistente interativo para configurar o projeto. Caso queira criar um pyproject.toml rapidamente, pode usar:
+
+sh
+Copiar
+Editar
+poetry init --no-interaction
+🔹 3. Se o projeto já existir, mas o ambiente virtual estiver corrompido
+Tente recriar o ambiente virtual:
+
+sh
+Copiar
+Editar
+poetry env use python
+poetry install
+🔹 4. Se precisar reinstalar o Poetry
+Se o problema persistir, pode ser uma instalação corrompida do Poetry. Reinstale com:
+
+sh
+Copiar
+Editar
+pip install --user --upgrade poetry
+Depois, tente rodar os comandos novamente dentro da pasta do projeto.
