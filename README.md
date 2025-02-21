@@ -24,12 +24,8 @@ Install Browser library from PyPi with pip:
 Initialize the Browser library:
 > rfbrowser init
 
-> pip install robotframework-requests
-
-
 Listar o que está instalado
 > pip list
-> pip list | findstr requests
 
 Playwright
 > npm install @playwright/test
